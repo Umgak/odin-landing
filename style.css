@@ -3,10 +3,16 @@
   font-family: Roboto, Verdna, sans-serif;
 }
 
+/* remove ugly pad */
+body {
+  margin: 0;
+}
+
 /* Main flexbox */
 .main {
   display: flex;
   flex-direction: column;
+  min-height: 100dvh;
 }
 
 /* Colors */
@@ -52,3 +58,12 @@
   list-style-type: none;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.footer .text {
+  color:#E5E7EB
+}
