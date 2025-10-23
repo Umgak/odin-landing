@@ -1,4 +1,54 @@
+/* Font selection */
+* {
+  font-family: Roboto, Verdna, sans-serif;
+}
+
+/* Main flexbox */
 .main {
   display: flex;
   flex-direction: column;
 }
+
+/* Colors */
+.header,
+.hero,
+.footer {
+  background-color: #1F2937;
+}
+
+/* Header flexbox */
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* All links in header */
+.header a {
+  text-decoration: none;
+  color: #E5E7EB;
+  font-size: 18px;
+}
+
+/* Remove padding around ul */
+.header ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* Header text */
+.header .logo {
+  font-size: 24px;
+  color: #F9FAF8;
+}
+
+/* flexbox for the links */
+.header-links {
+  display: flex;
+  gap: 16px;
+}
+
+/* Remove list-item discs */
+.header-links li {
+  list-style-type: none;
+}
+
