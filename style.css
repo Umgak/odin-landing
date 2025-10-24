@@ -177,7 +177,22 @@ body {
   color:#E5E7EB;
 }
 
-
+.footer:hover {
+    background: linear-gradient(
+    to bottom,
+    #5BCEFA 0%,
+    #5BCEFA 20%,
+    #F5A9B8 20%,
+    #F5A9B8 40%,
+    #FFFFFF 40%,
+    #FFFFFF 60%,
+    #F5A9B8 60%,
+    #F5A9B8 80%,
+    #5BCEFA 80%,
+    #5BCEFA 100%
+  );
+  color: #1F2937;
+}
 .footer .text {
   padding: 32px 0px;
 }
