@@ -1,6 +1,7 @@
 /* Font selection */
 * {
   font-family: Roboto, Verdna, sans-serif;
+  box-sizing: border-box;
 }
 
 /* remove ugly pad */
@@ -29,30 +30,27 @@ body {
   font-size: 18px;
 }
 
+/* title font formatting */
 .header .title {
   font-size: 48px;
   font-weight: 900px;
   color: #F9FAF8;
 }
 
-.header {
+/* header spacing */
+.titlebar,
+.hero {
   display: flex;
-  padding: 16px;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 16px 10% auto; 
 }
 
-.left,
-.right {
-  display: flex;
-  flex-direction: column;
+.titlebar {
+  margin-bottom: 48px;
 }
 
-.right {
-  align-items: flex-end;
-}
 /* Remove padding around ul */
 .header ul {
-  padding: 0;
   margin: 0;
 }
 
@@ -72,7 +70,6 @@ body {
 .header-links li {
   list-style-type: none;
 }
-
 
 /* signup button */
 .signup-button {
