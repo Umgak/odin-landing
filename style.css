@@ -17,32 +17,31 @@ body {
 
 /* Colors */
 .header,
-.hero,
 .footer {
   background-color: #1F2937;
 }
 
-/* Header flexbox */
-.header {
+/* titlebar flexbox */
+.titlebar {
   display: flex;
   justify-content: space-around;
 }
 
-/* All links in header */
-.header a {
+/* All links in titlebar */
+.titlebar a {
   text-decoration: none;
   color: #E5E7EB;
   font-size: 18px;
 }
 
 /* Remove padding around ul */
-.header ul {
+.titlebar ul {
   padding: 0;
   margin: 0;
 }
 
-/* Header text */
-.header .logo {
+/* titlebar text */
+.titlebar .logo {
   font-size: 24px;
   color: #F9FAF8;
 }
@@ -56,6 +55,16 @@ body {
 /* Remove list-item discs */
 .header-links li {
   list-style-type: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero .left {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Footer */
