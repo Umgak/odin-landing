@@ -6,13 +6,13 @@
 /* remove ugly pad */
 body {
   margin: 0;
+  min-height: 100dvh;
 }
 
 /* Main flexbox */
 .main {
   display: flex;
   flex-direction: column;
-  min-height: 100dvh;
 }
 
 /* Colors */
@@ -58,12 +58,10 @@ body {
   list-style-type: none;
 }
 
+/* Footer */
 .footer {
   display: flex;
   justify-content: center;
   margin-top: auto;
-}
-
-.footer .text {
   color:#E5E7EB
 }
