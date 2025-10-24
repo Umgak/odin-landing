@@ -63,40 +63,37 @@ body {
 /* flexbox for the links */
 .header-links {
   display: flex;
-  gap: 16px;
-}
-
-/* Remove list-item discs */
-.header-links li {
-  list-style-type: none;
+  gap: 16px; 
+  /* Remove list-item discs */
+  & li {
+    list-style-type: none;
+  }
 }
 
 /* signup button */
 .signup-button {
   width: fit-content;
-}
-
-.signup-button button {
-  background-color: #3882F6;
-  color: white;
-  padding: 8px 30px;
-  border-radius: 8px;
-  border: none;
-  font-size: 16px;
-  font-weight: 700;
+  & button {
+    background-color: #3882F6;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+  }
 }
 
 .information {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.information .title {
-  font-weight: 900;
-  font-size: 36px;
-  color: #1F2937;
-  margin: 48px auto;
+  & .title {
+    font-weight: 900;
+    font-size: 36px;
+    color: #1F2937;
+    margin: 48px auto;
+  }
 }
 
 .card-container {
@@ -109,18 +106,16 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-}
-
-.card img {
-  border: 3px solid #3882F6;
-  border-radius: 18px;
-  width: 250px;
-  height: 250px;
-}
-
-.card .text {
-  width: 250px;
-  text-align: center;
+  & img {
+    border: 3px solid #3882F6;
+    border-radius: 18px;
+    width: 250px;
+    height: 250px;
+  }
+  & .text {
+    width: 250px;
+    text-align: center;
+  }
 }
 
 .quote {
@@ -129,19 +124,16 @@ body {
   flex-direction: column;
   padding: 48px 10%;
   color: #1F2937;
+  & .text {
+    font-size: 36px;
+    font-weight: 300px;
+  }
+  & .quote-attrib {
+    align-self: flex-end;
+    font-size: 18px;
+    font-weight: 700;
+  }
 }
-
-.quote .text {
-  font-size: 36px;
-  font-weight: 300px;
-}
-
-.quote .quote-attrib {
-  align-self: flex-end;
-  font-size: 18px;
-  font-weight: 700;
-}
-
 
 .call {
   display: flex;
@@ -155,18 +147,15 @@ body {
   width: 70%;
   background-color: #3882F6;
   color: white;
-}
-
-.call .title {
-  font-size: 22px;
-  font-weight: 700;
-}
-
-.call .signup-button
-{
-  border: 2px solid white;
-  border-radius: 8px;
-  align-self: flex-end;
+  & .title {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  & .signup-button {
+    border: 2px solid white;
+    border-radius: 8px;
+    align-self: flex-end;
+  }
 }
 
 /* Footer */
@@ -175,8 +164,12 @@ body {
   justify-content: center;
   margin-top: auto;
   color:#E5E7EB;
+  & .text {
+    padding: 32px 0px;
+  }
 }
 
+/* trans rights are human rights */
 .footer:hover {
     background: linear-gradient(
     to bottom,
@@ -192,7 +185,4 @@ body {
     #5BCEFA 100%
   );
   color: #1F2937;
-}
-.footer .text {
-  padding: 32px 0px;
 }
